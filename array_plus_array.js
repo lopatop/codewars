@@ -3,3 +3,17 @@
 // P.S. Each array includes only integer numbers. Output is a number too.
 
 // SOLUTION:
+
+function arrayPlusArray(arr1, arr2) {
+    let sumArr1 = 0;
+    let sumArr2 = 0;
+    let sumArr; 
+    for (let i = 0; i < arr1.length; i++){
+    sumArr1 += arr1[i];
+  }
+    for (let i = 0; i < arr2.length; i++){
+    sumArr2 += arr2[i];
+  }
+    sumArr = sumArr1 + sumArr2; 
+    return sumArr;
+  }
