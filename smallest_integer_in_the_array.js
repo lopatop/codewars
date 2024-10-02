@@ -9,3 +9,10 @@ function findSmallestInt(arr) {
     }
     return arr[0];
 }
+
+// SOLUTION 2:
+
+function findSmallestInt(arr) {
+    let arrmin = Math.min(...arr);
+    return arrmin;
+}
