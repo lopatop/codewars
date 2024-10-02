@@ -3,3 +3,12 @@
 // Return your answer as a number.
 
 // SOLUTION: 
+
+function sumMix(x) {
+    let sum = 0;
+    for (let i = 0; i < x.length; i++) {
+        x[i] = +x[i]
+        sum = sum + x[i]
+    }
+    return sum;
+}
