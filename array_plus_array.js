@@ -17,3 +17,14 @@ function arrayPlusArray(arr1, arr2) {
     sumArr = sumArr1 + sumArr2; 
     return sumArr;
   }
+
+  // SOLUTION 2:
+
+  function arrayPlusArray(arr1, arr2) {
+    let sumArr = 0; 
+    let arr = [...arr1, ...arr2];
+    for (let i = 0; i < arr.length; i++){
+    sumArr += arr[i];
+  }
+    return sumArr;
+  }
