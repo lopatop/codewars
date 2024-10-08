@@ -4,3 +4,13 @@
 
 // SOLUTION:
 
+function countSheeps(sheep) {
+    let numberSheep = 0;
+    for (let i = 0; i < sheep.length; i++) {
+        if (sheep[i] !== undefined && sheep[i] !== null) {
+            if (sheep[i] === true) {
+                numberSheep += 1;
+            }
+        }
+    } return numberSheep;
+}   
