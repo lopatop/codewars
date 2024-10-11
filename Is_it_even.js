@@ -6,3 +6,12 @@
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 
 // SOLUTION:
+
+function testEven(n) {
+    if (n % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
