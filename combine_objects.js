@@ -7,3 +7,15 @@
 // The combine function should be a good citizen, so should not mutate the input objects.
 
 // SOLUTION:
+
+function combine(...objects) {
+    let result = {};
+    for (let i = 0; i < objects.length; i++) {
+
+        let obj = objects[i];
+        for (let key in obj) {
+            result[key] = (result[key] || 0) + obj[key];
+        }
+    }
+    return result;
+}
