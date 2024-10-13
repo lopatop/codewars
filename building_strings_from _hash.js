@@ -5,3 +5,12 @@
 // // solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
 
 // SOLUTION:
+
+function solution(pairs) {
+    let result = '';
+    for (let key in pairs) {
+        result += `${key} = ${pairs[key]},`
+
+    }
+    return result.slice(0, -1);
+}
