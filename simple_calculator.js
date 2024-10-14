@@ -26,3 +26,18 @@ function calculator(a, b, sign) {
         return "unknown value";
     }
 }
+
+// SOLUTION 2:
+
+function calculator(a, b, sign) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'unknown value'
+    }
+    switch (sign) {
+        case "+": return a + b;
+        case "-": return a - b;
+        case "*": return a * b;
+        case "/": return a / b;
+        default: return 'unknown value';
+    }
+}
