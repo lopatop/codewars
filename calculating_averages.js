@@ -6,3 +6,16 @@
 // It expects Calculator.average(3,4,5) to return 4.
 
 // SOLUTION:
+
+var Calculator = {
+    average: function (...numbers) {
+        let result = 0;
+        if (numbers.length === 0) {
+            return 0
+        }
+        for (let i = 0; i < numbers.length; i++) {
+            result += numbers[i]
+        }
+        return result / numbers.length;
+    }
+}
