@@ -19,3 +19,14 @@ function defineSuit(card) {
         return 'spades';
     }
 }
+
+//SOLUTION 2:
+
+function defineSuit(card) {
+    switch (card.slice(-1)) {
+        case '♣': return 'clubs';
+        case '♦': return 'diamonds';
+        case '♥': return 'hearts';
+        case '♠': return 'spades';
+    }
+}
