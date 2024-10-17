@@ -33,3 +33,32 @@
 
 
 // SOLUTION:
+
+const whosOnline = (friends) => {
+    const result = {};
+    if (friends.length === 0) {
+        return result
+    } else {
+        for (let i = 0; i < friends.length; i++) {
+            if (friends[i].status === "offline") {
+                if (result.offline) {
+                    result.offline.push(friends[i].username)
+                } else {
+                    result.offline = [friends[i].username]
+                }
+            } else if (friends[i].lastActivity <= 10) {
+                if (result.online) {
+                    result.online.push(friends[i].username)
+                } else {
+                    result.online = [friends[i].username]
+                }
+            } else {
+                if (result.away) {
+                    result.away.push(friends[i].username)
+                } else {
+                    result.away = [friends[i].username]
+                }
+            }
+        } return result
+    }
+}
