@@ -5,3 +5,7 @@
 // Simples!
 
 // SOLUTION: 
+
+function fixTheMeerkat(arr) {
+    return arr.reverse();
+}
