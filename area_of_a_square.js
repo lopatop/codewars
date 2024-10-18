@@ -3,3 +3,9 @@
 // Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)
 
 // SOLUTION:
+
+function squareArea(A) {
+    let r = A / Math.PI * 2;
+    let p = r ** 2;
+    return p
+}
