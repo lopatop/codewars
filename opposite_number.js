@@ -6,3 +6,7 @@
 // -34: 34
 
 // SOLUTION:
+
+function opposite(number) {
+    return number * -1
+}
