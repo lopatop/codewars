@@ -7,3 +7,7 @@
 // "8aaaaa dddd r     " -> "8aaaaaddddr"
 
 // SOLUTION:
+
+function noSpace(x) {
+    return x.split(" ").join("");
+}
