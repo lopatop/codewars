@@ -7,3 +7,7 @@
 // For ASCII table, you can refer to http://www.asciitable.com/
 
 // SOLUTION:
+
+function getChar(c) {
+    return String.fromCharCode(c);
+}
