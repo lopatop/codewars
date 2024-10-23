@@ -8,3 +8,11 @@
 // duck_duck_goose([a, b, c, d], 1) should return a.name
 // duck_duck_goose([a, b, c, d], 5) should return a.name
 // duck_duck_goose([a, b, c, d], 4) should return d.nam
+
+
+// SOLUTION:
+
+function duckDuckGoose(players, goose) {
+    let i = (goose - 1) % players.length;
+    return players[i].name;
+}
