@@ -32,3 +32,12 @@
 
 
 // SOLUTION:
+
+function getRow(n) {
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const rows = 26;
+    const index = (n - 1) % rows;
+    const firstChar = alphabet[index];
+    const rowString = firstChar.repeat(index + 1) + alphabet.slice(index + 1);
+    return rowString;
+}
