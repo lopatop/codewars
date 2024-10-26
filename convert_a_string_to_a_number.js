@@ -10,3 +10,7 @@
 // "-7" --> -7
 
 // SOLUTION:
+
+export function stringToNumber(str){
+    return Number(str);
+}
