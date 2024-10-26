@@ -10,7 +10,7 @@
 
 // SOLUTION:
 
-export function gooseFilter(birds: string[]): string[] {
-    const geese: string[] = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+export function gooseFilter(birds){
+    const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     return birds.filter(bird => !geese.includes(bird));
 }
