@@ -14,3 +14,9 @@ function toNumberArray(stringarray) {
     };
     return stringarray
 }
+
+// SOLUTION 2:
+
+const toNumberArray = stringarray => {
+    return stringarray.map(el => +el)
+}
