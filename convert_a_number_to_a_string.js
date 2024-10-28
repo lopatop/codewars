@@ -8,3 +8,9 @@
 
 
 // SOLUTION:
+
+export function numberToString(num) {
+    return String(num);
+    //`${num}`;
+    //num.toString();
+}
