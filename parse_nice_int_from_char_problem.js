@@ -4,3 +4,7 @@
 // Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
 
 // SOLUTION:
+
+export function get_age(age){
+    return +age[0];
+    }
