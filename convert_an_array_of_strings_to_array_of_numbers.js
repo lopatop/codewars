@@ -7,3 +7,10 @@
 // Note that you can receive floats as well.
 
 // SOLUTION:
+
+function toNumberArray(stringarray) {
+    for (let i = 0; i < stringarray.length; i++) {
+        stringarray[i] = +stringarray[i];
+    };
+    return stringarray
+}
