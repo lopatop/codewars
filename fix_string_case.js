@@ -8,3 +8,21 @@
 // solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
 
 // SOLUTION:
+
+
+function solve(s) {
+    let countUpper = 0;
+    let countLower = 0;
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] !== s[i].toLowerCase()) {
+            countUpper++;
+        } else {
+            countLower++;
+        }
+    }
+    if (countUpper > countLower) {
+        return s.toUpperCase();
+    } else if (countUpper < countLower || countUpper === countLower) {
+        return s.toLowerCase();
+    }
+}
