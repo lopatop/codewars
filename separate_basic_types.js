@@ -12,3 +12,24 @@
 //   }
 
 // SOLUTION: 
+
+function separateTypes(input) {
+    let obj = {
+        number: [],
+        string: [],
+        boolean: []
+    }
+    for (let i = 0; i < input.length; i++) {
+        if (typeof input[i] === "number") {
+            obj.number.push(input[i]);
+        } else if (typeof input[i] === "string") {
+            obj.string.push(input[i]);
+        } else if (typeof input[i] === "boolean") {
+            obj.boolean.push(input[i])
+        }
+    }
+    if (obj.number.length === 0) delete obj.number;
+    if (obj.string.length === 0) delete obj.string;
+    if (obj.boolean.length === 0) delete obj.boolean;
+    return obj;
+}
