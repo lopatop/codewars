@@ -6,3 +6,12 @@
 // ([1,2,3,4,5], "index") should return 0
 
 // SOLUTION:
+
+function min(arr, toReturn) {
+    const minValue = Math.min(...arr);
+    if (toReturn === 'value') {
+        return minValue;
+    } else {
+        return arr.indexOf(minValue);
+    }
+}
