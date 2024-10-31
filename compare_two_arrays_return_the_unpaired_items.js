@@ -9,3 +9,9 @@
 // [1, 2, 3] , [3, 3, 2, 1] --> []
 
 // SOLUTION:
+
+function hotSingles(arr1, arr2) {
+    const incl1 = arr2.filter(el => !arr1.includes(el));
+    const incl2 = arr1.filter(el => !arr2.includes(el));
+    return [...new Set([...incl2, ...incl1])];
+}
