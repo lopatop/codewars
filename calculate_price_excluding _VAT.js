@@ -10,3 +10,4 @@
 
 // SOLUTION:
 
+const  excludingVatPrice = price => price === null? -1 : price - price * 15 / 115;
