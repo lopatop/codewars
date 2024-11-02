@@ -12,3 +12,7 @@
 // Note: this kata uses strict construction as shown in the description and the examples, you can read more about it here
 
 // SOLUTION:
+
+function century(year) {
+    return Math.ceil(year / 100);
+}
