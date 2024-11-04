@@ -10,4 +10,17 @@
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 // Your function should only return a number, not the explanation about how you get that number.
 
-// SOLUTION: 
+// SOLUTION 1: 
+
+function getSum(a, b) {
+    let sum = 0;
+    if (a === b) {
+        return a;
+    }
+    if (a > b) {
+        [a, b] = [b, a];
+    }
+    for (let i = a; i <= b; i++) {
+        sum += i;
+    } return sum;
+}
