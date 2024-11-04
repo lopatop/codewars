@@ -5,3 +5,8 @@
 // StringsFundamentals
 
 // SOLUTION:
+
+function getCount(str) {
+    const nStr = str.match(/[aeiou]/g);
+    return nStr ? nStr.length : 0;
+}
