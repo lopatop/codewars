@@ -7,10 +7,16 @@
 // -100 --> "-100"
 
 
-// SOLUTION:
+// SOLUTION 1:
 
 export function numberToString(num) {
     return String(num);
     //`${num}`;
     //num.toString();
+}
+
+// SOLUTION 2:
+
+function numberToString(num) {
+    return num.toString();
 }
