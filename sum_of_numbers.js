@@ -24,3 +24,11 @@ function getSum(a, b) {
         sum += i;
     } return sum;
 }
+
+// SOLUTION 2: 
+
+function getSum(a, b) {
+    let maxNumber = Math.max(a, b),
+        minNumber = Math.min(a, b);
+    return ((maxNumber - minNumber + 1) * (maxNumber + minNumber)) / 2
+}
