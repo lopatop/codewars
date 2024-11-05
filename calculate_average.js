@@ -3,4 +3,15 @@
 // Note: Empty arrays should return 0.
 
 
-// SOLUTION:
+// SOLUTION 1:
+
+function findAverage(array) {
+    let sum = 0;
+    if (array.length !== 0) {
+        array.forEach(el => {
+            sum += el;
+        })
+        return sum / array.length;
+    } return 0;
+
+}
