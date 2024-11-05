@@ -12,3 +12,7 @@
 
 // SOLUTION: 
 
+function oddOrEven(array) {
+    let sumArray = array.reduce((acc, el) => acc += el, 0);
+    return sumArray % 2 === 0 ? 'even' : 'odd';
+}
