@@ -15,3 +15,9 @@ function findAverage(array) {
     } return 0;
 
 }
+
+// SOLUTION 2:
+
+function findAverage(array) {
+    return array.length === 0 ? 0 : array.reduce((acc, i) => acc + i, 0) / array.length;
+}
