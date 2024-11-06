@@ -4,6 +4,8 @@
 
 // SOLUTION: 
 
-function hero(bullets, dragons) {
-    return (bullets / 2 >= dragons) ? true : false;
+function findShort(s) {
+    const array = s.split(' ');
+        array.sort((a, b) => a.length - b.length)
+    return array[0].length
 }
