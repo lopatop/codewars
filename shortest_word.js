@@ -4,3 +4,6 @@
 
 // SOLUTION: 
 
+function hero(bullets, dragons) {
+    return (bullets / 2 >= dragons) ? true : false;
+}
