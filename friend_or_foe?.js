@@ -8,3 +8,5 @@
 // Input strings will only contain letters. Note: keep the original order of the names in the output.
 
 // SOLUTION:
+
+const friend = friends => friends.filter(el => el.length === 4);
