@@ -6,3 +6,5 @@
 // Input: 123456789 Output: 987654321
 
 // SOLUTION:
+
+const descendingOrder = n => +(n.toString().split('').sort((a,b) => b-a).join(''));
