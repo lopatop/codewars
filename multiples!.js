@@ -3,3 +3,15 @@
 // Ex: Input: 105 --> Output: "BangBoom" Ex: Input: 9 --> Output: "Bang" Ex:Input: 25 --> Output: "Boom"
 
 // SOLUTION:
+
+function multiple(x) {
+    if (x % 3 == 0 && x % 5 == 0) {
+        return "BangBoom"
+    } else if (x % 3 == 0) {
+        return "Bang"
+    } else if (x % 5 == 0) {
+        return "Boom"
+    } else {
+        return "Miss"
+    }
+}
