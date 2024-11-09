@@ -4,3 +4,7 @@
 // Function should return true if it is possible and false if not.
 
 // SOLUTION:
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return distanceToPump <= mpg * fuelLeft ? true : false;
+};
