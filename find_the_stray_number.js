@@ -8,3 +8,8 @@
 
 
 // SOLUTION:
+
+function stray(numbers) {
+    const uniqueNumber = numbers.find(el => numbers.indexOf(el) === numbers.lastIndexOf(el));
+    return uniqueNumber;
+}
