@@ -5,3 +5,9 @@
 
 
 // SOLUTION:
+
+function sumNoDuplicates(numList) {
+    const uniqNumbers = numList.filter(number => numList.indexOf(number) === numList.lastIndexOf(number));
+    const sumUniqNumbers = uniqNumbers.reduce((acc, el) => acc + el, 0)
+    return sumUniqNumbers;
+}
