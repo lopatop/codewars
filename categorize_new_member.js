@@ -9,7 +9,7 @@
 // input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
-// SOLUTION:
+// SOLUTION 1:
 
 function openOrSenior(data) {
     const array = data.map((el) => {
@@ -20,4 +20,10 @@ function openOrSenior(data) {
         }
     })
     return array;
+}
+
+//SOLUTION 2:
+
+function openOrSenior(data) {
+    return data.map(el => el[0] > 54 && el[1] > 7 ? el = 'Senior' : el = 'Open')
 }
