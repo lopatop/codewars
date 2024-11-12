@@ -15,3 +15,9 @@
 // 26  =>  false
 
 // SOLUTION:
+
+var isSquare = function (n) {
+    if (n < 0) return false;
+    const a = Math.sqrt(n);
+    return a === Math.floor(a);
+}
