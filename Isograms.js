@@ -6,3 +6,9 @@
 // "moOse" --> false (ignore letter case)
 
 // SOLUTION:
+
+function isIsogram(str) {
+    const strToLowerCase = str.toLowerCase();
+    const includes = strToLowerCase.split('').filter(el => strToLowerCase.indexOf(el) === strToLowerCase.lastIndexOf(el)).join('');
+    return includes.length === str.length ? true : false;
+}
