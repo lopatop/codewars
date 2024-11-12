@@ -10,3 +10,14 @@
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 // SOLUTION:
+
+function openOrSenior(data) {
+    const array = data.map((el) => {
+        if (el[0] >= 55 && el[1] > 7) {
+            return el = 'Senior';
+        } else {
+            return el = 'Open';
+        }
+    })
+    return array;
+}
