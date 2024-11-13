@@ -11,3 +11,8 @@
 // "Nananananananananananananananana Batman!" --> "####################################man!"
 
 // SOLUTION:
+
+function maskify(cc) {
+    const but = '#';
+    return cc.length > 4 ? but.repeat(cc.length - 4) + cc.slice(-4) : cc;
+}
