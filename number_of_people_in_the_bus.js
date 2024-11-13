@@ -7,3 +7,5 @@
 // The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
 
 // SOLUTION: 
+
+const number =  busStops => busStops.reduce ((acc, el) => acc -= el[1] - el[0],0)
