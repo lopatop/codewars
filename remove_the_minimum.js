@@ -11,3 +11,10 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 // SOLUTION:
+
+function removeSmallest(numbers) {
+    if (numbers.length === 0) return []
+    let minNumbers = Math.min(...numbers);
+    let index = numbers.indexOf(minNumbers);
+    return numbers.slice(0, index).concat(numbers.slice(index + 1))
+}
