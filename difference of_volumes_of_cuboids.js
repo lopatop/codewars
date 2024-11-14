@@ -5,3 +5,9 @@
 // If you can, try writing it in one line of code.
 
 // SOLUTION:
+
+function findDifference(a, b) {
+    const volA = a.reduce((acc, el) => acc * el, 1)
+    const volB = b.reduce((acc, el) => acc * el, 1)
+    return volA > volB ? volA - volB : volB - volA
+}
