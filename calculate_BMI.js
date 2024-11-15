@@ -6,3 +6,12 @@
 // if bmi > 30 return "Obese"
 
 // SOLUTION:
+
+function bmi(weight, height) {
+    const massIndex = weight / height ** 2
+    if (massIndex <= 18.5) return "Underweight";
+    if (massIndex <= 25) return "Normal"
+    if (massIndex <= 30) return "Overweight"
+    if (massIndex > 30) return "Obese"
+
+}
