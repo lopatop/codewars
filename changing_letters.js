@@ -7,3 +7,6 @@
 
 // SOLUTION:
 
+function swap(string) {
+    return string.replace(/[aeiou]/g, (text) => text.toUpperCase())
+}
