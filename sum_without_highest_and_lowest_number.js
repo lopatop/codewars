@@ -10,3 +10,7 @@
 
 // SOLUTION:
 
+function sumArray(array) {
+    if (!Array.isArray(array) || array.length < 3) return 0;
+    return array.reduce((acc, el) => acc + el, 0) - Math.max(...array) - Math.min(...array)
+}
