@@ -4,3 +4,7 @@
 // Your magnum opus contains several thousand references to temperature, but those temperatures are all currently in degrees Celsius. You don't want to convert everything by hand, so you've decided to write a function that takes a temperature in degrees Celsius and returns the equivalent temperature in degrees Rømer. Fortunately, you remember that the function for converting is pretty simple and it looks like this:
 
 // SOLUTION: 
+
+function celsiusToRomer(temp) {
+    return 21 / 40 * temp + 7.5
+}
