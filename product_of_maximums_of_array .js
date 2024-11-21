@@ -25,3 +25,12 @@
 // Since the size (k) equal 3 , then the subsequence of size 3 whose gives product of maxima is 10 * 3 * -1 = -30 .
 
 // SOLUTION:
+
+function maxProduct(numbers, size) {
+    let res = 1
+    numbers.sort((a, b) => b - a);
+    for (let i = 0; i < size; i++) {
+        res *= numbers[i]
+    }
+    return res
+}
