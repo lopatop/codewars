@@ -13,3 +13,13 @@
 
 // SOLUTION:
 
+function getDrinkByProfession(param) {
+    const loverParam = param.toLowerCase()
+    if (loverParam === "jabroni") return "Patron Tequila"
+    if (loverParam === "school counselor") return "Anything with Alcohol"
+    if (loverParam === "programmer") return "Hipster Craft Beer"
+    if (loverParam === "bike gang member") return "Moonshine"
+    if (loverParam === "politician") return "Your tax dollars"
+    if (loverParam === "rapper") return "Cristal"
+    return "Beer"
+}
