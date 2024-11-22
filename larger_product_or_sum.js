@@ -12,3 +12,11 @@
 // The product of the 3 lowest numbers is higher than the sum of the 3 highest numbers so the function returns "product"
 
 // SOLUTION:
+
+function sumOrProduct(array, n) {
+    const arrMax = array.sort((a, b) => b - a).slice(0, n).reduce((acc, el) => acc + el, 0)
+    const arrMin = array.sort((a, b) => a - b).slice(0, n).reduce((acc, el) => acc * el, 1)
+    if (arrMax > arrMin) return "sum"
+    if (arrMax < arrMin) return "product"
+    if (arrMax === arrMin) return "same"
+}
