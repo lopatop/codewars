@@ -8,3 +8,14 @@
 // "1001" -> "0110"
 
 // SOLUTION: 
+
+function onesComplement(n) {
+    let arr = n.split('')
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === '0') {
+            arr[i] = '1'
+        } else if (arr[i] === '1') {
+            arr[i] = '0'
+        }
+    } return arr.join('')
+}
