@@ -8,3 +8,7 @@
 
 // SOLUTION:
 
+function mango(quantity, price) {
+    const mangoFree = Math.floor(quantity / 3)
+    return quantity * price - mangoFree * price
+}
