@@ -8,3 +8,7 @@
 // numbers(1, 3, NaN); // true
 
 // SOLUTION:
+
+const numbers = (...par) => {
+    return par.every(el => typeof el === 'number')
+}
