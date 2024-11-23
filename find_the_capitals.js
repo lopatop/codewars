@@ -5,3 +5,13 @@
 // "CodEWaRs" --> [0,3,4,6]
 
 // SOLUTION:
+
+var capitals = function (word) {
+    const arrNumber = []
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] === word[i].toUpperCase()) {
+            arrNumber.push(i)
+        }
+    }
+    return arrNumber
+};
