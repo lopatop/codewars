@@ -10,3 +10,12 @@
 // inAscOrder([9,8,7,6,5,4,3,2,1]); // returns false because the numbers are in DESCENDING order
 
 // SOLUTION:
+
+function inAscOrder(arr) {
+    const newArr = [...arr].sort((a, b) => a - b);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== newArr[i])
+            return false
+    }
+    return true
+}
