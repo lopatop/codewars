@@ -9,3 +9,11 @@
 // step > 0
 
 // SOLUTION:
+
+function generateRange(min, max, step) {
+    const result = []
+    while (max >= min) {
+        result.push(min)
+        min += step
+    } return result
+}
