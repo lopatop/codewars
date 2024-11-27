@@ -9,3 +9,7 @@
 
 // SOLUTION:
 
+function isOrthogonal(u, v) {
+    const result = u.map((el, i) => el * v[i])
+    return (result.reduce((acc, el) => acc + el, 0)) === 0 ? true : false
+}
