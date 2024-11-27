@@ -15,3 +15,7 @@
 //   0    2     1    "right"
 
 // SOLUTION:
+
+function elevator(left, right, call) {
+    return (call === left && call !== right || left > call && left < right || left > right && left < call) ? 'left' : 'right';
+}
