@@ -7,3 +7,12 @@
 // +++
 
 // SOLUTION:
+
+function generateShape(integer) {
+    let result = '';
+    const a = '+'.repeat(integer);
+    for (let i = 0; i < integer; i++) {
+        result += i === integer - 1 ? a : `${a}\n`
+    }
+    return result;
+}
