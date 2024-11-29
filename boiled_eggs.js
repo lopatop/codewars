@@ -13,3 +13,7 @@
 // 10 --> 10
 
 // SOLUTION:
+
+function cookingTime(eggs) {
+    return Math.ceil(eggs / 8) * 5
+}
