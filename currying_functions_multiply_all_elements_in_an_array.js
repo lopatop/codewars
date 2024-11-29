@@ -5,3 +5,9 @@
 // multiplyAll([1, 2, 3])(2) = [2, 4, 6];
 
 // SOLUTION:
+
+function multiplyAll(arr) {
+    return function (a) {
+        return arr.map(el => el * a);
+    };
+}
