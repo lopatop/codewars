@@ -23,4 +23,14 @@
 
 // SOLUTION:
 
+function thirstyIn(water, ageOfDwellerArray) {
+    if (ageOfDwellerArray.length <=0) return -1
 
+    const waterDay = ageOfDwellerArray.map((age,index) =>{
+        if(age < 18)  return 1
+        if(age >= 18 && age <= 50) return 2
+        if(age > 50) return 1.5
+    })
+    return Math.floor(water/waterDay.reduce((acc, el) =>acc+el,0))
+
+}
