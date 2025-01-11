@@ -16,4 +16,11 @@
 // SOLUTION:
 
 
+function match(usefulness, months) {
+    const totalUsefulness = usefulness.reduce((acc, el) => acc + el, 0);
 
+    const decayRate = 0.15;
+    const womanNeeds = 100 * Math.pow(1 - decayRate, months);
+
+    return totalUsefulness >= womanNeeds ? "Match!" : "No match!";
+}
