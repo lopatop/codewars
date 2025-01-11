@@ -15,3 +15,23 @@
 
 // SOLUTION:
 
+function typing(param) {
+
+    const type = typeof param;
+
+    if (type === "undefined") {
+        return "undefined";
+    }
+
+    if (type === "string") {
+        return `${type}="${param}"`;
+    }
+    if (type === "object" && param !== null) {
+        return `${type}=${JSON.stringify(param)}`;
+    }
+
+    if (type === "function") {
+        return `${type}=${param.toString()}`;
+    }
+    return `${type}=${param}`;
+}
