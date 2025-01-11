@@ -10,3 +10,15 @@
 
 // SOLUTION:
 
+function isLucky(ticket) {
+
+    if (ticket.length !== 6 || !/^\d{6}$/.test(ticket)) {
+        return false;
+    }
+
+    const sumFirst = ticket.slice(0, 3).split('').reduce((acc, el) => acc + +el, 0);
+
+    const sumLast = ticket.slice(3, 6).split('').reduce((acc, el) => acc + +el, 0);
+
+    return sumFirst === sumLast;
+}
