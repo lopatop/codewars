@@ -5,3 +5,16 @@
 //     The constructor taking no arguments should assign 0 to Cube's Side property.
 
 // SOLUTION:
+
+class Cube {
+    constructor(side = 0) {
+        this._side = Math.abs(side)
+    }
+
+    getSide() {
+        return this._side;
+    }
+    setSide(n) {
+        this._side = Math.abs(n);
+    }
+}
