@@ -22,3 +22,13 @@
 //     To solve this, you need to think of a way to do the kata without making massive lists or huge for loops. Read the discourse for some inspiration :)
 
 // SOLUTION:
+
+function overTheRoad(address, n){
+
+    if (address % 2 === 1) {
+        return n * 2 - address + 1;
+    } else {
+        return n * 2 - address + 1;
+    }
+
+}
