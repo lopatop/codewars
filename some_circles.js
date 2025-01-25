@@ -12,3 +12,7 @@
 // Translations and comments (and upvotes!) welcome!
 
 // SOLUTION:
+
+function sumCircles(...circles) {
+    return `We have this much circle: ${Math.round(circles.reduce((acc, c) => acc + Math.PI *Math.pow(c,2)/4 ,0))}`
+}
