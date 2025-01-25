@@ -22,3 +22,12 @@
 // Complete function calculateTime that accepts two arguments battery and charger, return how many hours can charge the battery from 0% to 100%. The result should be a number, round to 2 decimal places (In Haskell, no need to round it).
 
 // SOLUTION:
+
+function calculateTime(battery,charger){
+    const fastCharge = battery*0.85/charger
+    const decreasingCharge = battery*0.1/charger/0.5
+    const trickleCharge = battery*0.05/charger/0.2
+
+    const sumCharge = fastCharge+decreasingCharge+trickleCharge
+    return parseFloat(sumCharge.toFixed(2))
+}
