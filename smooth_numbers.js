@@ -19,3 +19,29 @@
 
 
 // SOLUTION:
+
+function isSmooth(n) {
+    if (n <= 0) return 'non-smooth'
+    if (n === 1) return "power of 2"
+    if (n % 2 === 0) {
+        while (n % 2 === 0)
+            n /= 2;
+        if (n === 1) return "power of 2"
+    }
+    if (n % 3 === 0) {
+        while (n % 3 === 0)
+            n /= 3;
+        if (n === 1) return "3-smooth";
+    }
+    if (n % 5 === 0) {
+        while (n % 5 === 0)
+            n /= 5;
+        if (n === 1) return "Hamming number";
+    }
+    if (n % 7 === 0) {
+        while (n % 7 === 0)
+            n /= 7;
+        if (n === 1) return "humble number";
+    }
+    return "non-smooth";
+}
