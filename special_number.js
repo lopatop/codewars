@@ -35,3 +35,11 @@
 
 
 // SOLUTION:
+
+function specialNumber(n){
+    const arrN =[...String(n)]
+    const specialDigits = ["0", "1", "2", "3", "4", "5"];
+    const filtered = arrN.filter(el => !specialDigits.includes(el));
+    return filtered.length === 0 ? "Special!!" : "NOT!!";
+
+}
