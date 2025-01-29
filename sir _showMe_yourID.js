@@ -13,3 +13,11 @@
 
 
 // SOLUTION:
+
+function showMe(yourID) {
+    return /^[A-Z][a-z]+$/.test(yourID)
+        ? true
+        : yourID.split('-').every(part => /^[A-Z][a-z]+$/.test(part))
+            ? true
+            : false
+}
