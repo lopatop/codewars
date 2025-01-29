@@ -9,3 +9,6 @@
 
 // SOLUTION:
 
+function sum() {
+    return  [...arguments].reduce((acc, arg)=> acc+arg,0 )
+}
