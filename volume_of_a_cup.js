@@ -23,3 +23,10 @@
 // //returns 1858.51
 
 // SOLUTION:
+
+function cupVolume(d1, d2, height){
+    const r1 = d1/2
+    const r2 = d2/2
+    const cupValume  = 1/3*Math.PI*height*(r1**2+r1*r2+r2**2)
+    return +cupValume.toFixed(2)
+}
