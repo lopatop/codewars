@@ -16,3 +16,12 @@
 // Because you're a nice person, you always round up the tip, regardless of the service.
 
 // SOLUTION:
+
+function calculateTip(amount, rating) {
+    if(rating.toLowerCase() ==='terrible') return Math.ceil(amount* 0)
+    if(rating.toLowerCase() ==='poor') return Math.ceil(amount* 0.05)
+    if(rating.toLowerCase() ==='good') return Math.ceil(amount* 0.1)
+    if(rating.toLowerCase() ==='great') return Math.ceil(amount* 0.15)
+    if(rating.toLowerCase() ==='excellent') return Math.ceil(amount* 0.2)
+    return "Rating not recognised"
+}
