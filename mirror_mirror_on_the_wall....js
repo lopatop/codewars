@@ -16,3 +16,12 @@
 
 // SOLUTION:
 
+function mirror(data) {
+    if (data.length <=1){
+        return data
+    }
+    const arrSortNegative = [...data].sort((a,b) => a-b)
+    const arrSortPositive = arrSortNegative.slice(0,-1).reverse()
+
+    return [...arrSortNegative, ...arrSortPositive]
+}
