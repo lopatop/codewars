@@ -12,3 +12,16 @@
 //
 // // SOLUTION:
 
+function evaporator(content, evap_per_day, threshold) {
+    let days = 0;
+    let currentContent = content;
+
+    let thresholdContent = content * (threshold / 100);
+
+    while (currentContent > thresholdContent) {
+        currentContent -= currentContent * (evap_per_day / 100);
+        days++;
+    }
+
+    return days;
+}
