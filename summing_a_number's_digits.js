@@ -9,3 +9,8 @@
 // Let's assume that all numbers in the input will be integer values.
 
 // SOLUTION:
+
+function sumDigits(number) {
+    number = number < 0 ? -number : number;
+    return number.toString().split('').reduce((acc, item) => acc + Number(item), 0);
+}
