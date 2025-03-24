@@ -10,3 +10,13 @@
 // 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 // SOLUTION:
+
+function digitalRoot(n) {
+    debugger
+    if(n<10) return n
+    const sum = n
+        .toString()
+        .split('')
+        .reduce((acc, num)=>acc+ +num,0)
+    return digitalRoot(sum)
+}
