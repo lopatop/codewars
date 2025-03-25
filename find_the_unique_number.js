@@ -11,3 +11,11 @@
 //     6
 
 // SOLUTION:
+
+function findUnique(numbers) {
+    let unique=0
+    for (const num of numbers) {
+        unique ^= num
+    }
+    return unique
+}
