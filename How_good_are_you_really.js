@@ -12,3 +12,7 @@
 
 // SOLUTION:
 
+function betterThanAverage(classPoints, yourPoints) {
+    const result = classPoints.reduce((acc,el)=> acc+el,0)/classPoints.length
+    return result < yourPoints? true : false
+}
