@@ -26,3 +26,33 @@ or
 more.*/
 
 // SOLUTION:
+
+function password(str) {
+    const strArr = str.split('')
+    let passwordIsValid = 0
+
+    let toUpper = false
+    let toLower = false
+    let isNumber = false
+
+    if (strArr.length >7) passwordIsValid++;
+    for(let i = 0; i<strArr.length; i++){
+        const char = strArr[i]
+
+        if(!toUpper && char === char.toUpperCase() && char !== char.toLowerCase()){
+            toUpper = true
+            passwordIsValid ++
+        }
+        if(!toLower && char === char.toLowerCase() && char !== char.toUpperCase()){
+            toLower = true
+            passwordIsValid ++
+        }
+        if(!isNumber && !isNaN(char)){
+            isNumber = true
+            passwordIsValid ++
+        }
+
+    }
+    return passwordIsValid>=4
+
+}
