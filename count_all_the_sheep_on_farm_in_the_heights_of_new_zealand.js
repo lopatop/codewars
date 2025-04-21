@@ -17,3 +17,13 @@ Example 4: Input: [], [4], 15 --> Output: 11
 Good luck! :-)*/
 
 // SOLUTION:
+
+function lostSheep(friday,saturday,total){
+    if (friday.length === 0 && saturday.length === 0) return total
+
+    const fridayNum = friday.reduce((acc,n)=>acc+n,0)
+    const saturdayNum = saturday.reduce((acc,n)=>acc+n,0)
+    const countSheep = total - fridayNum - saturdayNum
+    return countSheep
+
+}
