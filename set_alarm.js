@@ -10,3 +10,7 @@
 // false    | false    => false
 
 // SOLUTION:
+
+function setAlarm(employed, vacation){
+    return employed && !vacation
+}
