@@ -22,3 +22,23 @@
 
 
 // SOLUTION:
+
+function hiddenWord(num) {
+    const arrNum = String(num).split('')
+    let res = ''
+    for(let i = 0; i<arrNum.length; i++ ){
+        let n = arrNum[i]
+        if(n == 6) res+='a'
+        if(n == 1) res+='b'
+        if(n == 7) res+='d'
+        if(n == 4) res+='e'
+        if(n == 3) res+='i'
+        if(n == 2) res+='l'
+        if(n == 9) res+='m'
+        if(n == 8) res+='n'
+        if(n == 0) res+='o'
+        if(n == 5) res+='t'
+    }
+    return res
+
+}
