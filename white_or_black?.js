@@ -11,3 +11,9 @@
 
 // SOLUTION:
 
+function mineColor(file, rank) {
+    return (rank % 2 === 0 && (file === 'a' || file === 'c' || file === 'e' || file === 'g')) ||
+    (rank % 2 !== 0 && (file === 'b' || file === 'd' || file === 'f' || file === 'h'))
+        ? 'white'
+        : 'black';
+}
