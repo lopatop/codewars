@@ -10,3 +10,7 @@
 // greet(null) === null; // Return null if input is null
 
 // SOLUTION:
+
+function greet(name) {
+    return name? `hello ${name}!`:null
+}
