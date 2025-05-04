@@ -9,3 +9,25 @@
 // Note: if multiple products have the same revenue, order them according to their original positions in the input list.
 
 // SOLUTION:
+
+function top3(products, amounts, prices) {
+    const amountPrice = amounts.map((el, i) => el * prices[i]);
+
+
+    const combiObj = products.map((name, i) => ({
+        name,
+        price: amountPrice[i],
+        index: i
+    }));
+
+    const sortedArr = combiObj.sort((a, b) => {
+        if (b.price === a.price) {
+            return a.index - b.index;
+        }
+        return b.price - a.price;
+    });
+
+    const sortedNames = sortedArr.map(item => item.name);
+
+    return sortedNames.slice(0, 3);
+}
