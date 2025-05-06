@@ -10,3 +10,5 @@
 //     [{1:1},{2:2}] => false
 
 // SOLUTION:
+
+const arrCheck = (value) => value.every(el=>Array.isArray(el))
