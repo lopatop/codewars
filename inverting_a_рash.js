@@ -32,3 +32,11 @@
 
 
 // SOLUTION:
+
+
+function invertHash(hash) {
+    return Object.entries(hash).reduce((acc, [k, v])=>{
+        acc[v] = k
+        return acc
+    },{})
+}
