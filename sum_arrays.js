@@ -22,3 +22,6 @@
 
 // SOLUTION:
 
+function sum (numbers) {
+    return numbers.length>0? numbers.reduce((acc,el)=>acc+el,0):0
+}
