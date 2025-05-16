@@ -13,3 +13,8 @@
 //
 //
 // // SOLUTION:"
+
+function change(string){
+    string = string.toLowerCase()
+    return 'abcdefghijklmnopqrstuvwxyz'.split('').map(el=>string.indexOf(el) !==-1?  1:   0).join('')
+}
