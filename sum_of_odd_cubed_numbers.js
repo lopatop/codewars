@@ -2,3 +2,11 @@
 
 // SOLUTION:
 
+function cubeOdd(arr) {
+    if (!arr.every(x => typeof x === 'number')) return undefined;
+
+    return arr
+        .map(n => n ** 3)
+        .filter(n => n % 2 !== 0)
+        .reduce((acc, n) => acc + n, 0);
+}
