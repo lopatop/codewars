@@ -9,3 +9,8 @@
 
 // SOLUTION:
 
+function magicSum(numbers) {
+    return numbers
+        .filter(n => n % 2 !== 0 && n.toString().includes('3'))
+        .reduce((sum, n) => sum + n, 0);
+}
