@@ -8,3 +8,21 @@
 // "1plus2plus3minus4" -->  "2"
 
 // SOLUTION:
+
+function calculate(str) {
+    const tokens = str.split(/(plus|minus)/);
+    let total = Number(tokens[0]);
+
+    for (let i = 1; i < tokens.length; i += 2) {
+        const operator = tokens[i];
+        const number = Number(tokens[i + 1]);
+
+        if (operator === 'plus') {
+            total += number;
+        } else if (operator === 'minus') {
+            total -= number;
+        }
+    }
+
+    return String(total);
+}
