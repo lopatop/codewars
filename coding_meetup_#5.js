@@ -22,3 +22,11 @@
 
 // SOLUTION:
 
+function countLanguages(list) {
+    return list.reduce((acc,dev)=>{
+        let lang = dev.language
+        acc[lang] = (acc[lang] || 0) +1
+        return acc
+    },{})
+
+}
