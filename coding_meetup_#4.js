@@ -19,3 +19,8 @@
 //         The input array will always be valid and formatted as in the example above.
 
 // SOLUTION:
+
+function getFirstPython(list) {
+    const res = list.filter(el=>el.language === 'Python')
+    return res.length? `${res[0].firstName}, ${res[0].country}`: 'There will be no Python developers'
+}
