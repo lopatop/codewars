@@ -19,3 +19,7 @@
 // The input array will always be valid and formatted as in the example above.
 
 // SOLUTION:
+
+function isRubyComing(list) {
+    return list.some(el=>el.language === 'Ruby')
+}
