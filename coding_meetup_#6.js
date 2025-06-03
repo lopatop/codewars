@@ -20,3 +20,8 @@
 // The input array will always be valid and formatted as in the example above.
 
 // SOLUTION:
+
+function isSameLanguage(list) {
+    const lng = list[0].language
+    return list.every(el=>lng === el.language)
+}
