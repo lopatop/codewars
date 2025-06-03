@@ -22,3 +22,9 @@
 //     The input array will always be valid and formatted as in the example above and will never be empty.
 
 // SOLUTION:
+
+function findSenior(list) {
+    return list
+        .sort((a,b) => b.age - a.age)
+        .filter(el=>list[0].age === el.age)
+}
