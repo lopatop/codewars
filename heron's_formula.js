@@ -7,3 +7,9 @@
 //     You do not need to round anything. Answers will be tested for correctness within a margin of 0.01.
 
 // SOLUTION:
+
+
+function heron(a, b, c) {
+    const s = (a+b+c)/2
+    return Math.sqrt(s*(s-a)*(s-b)*(s-c))
+}
