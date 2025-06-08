@@ -7,3 +7,16 @@
 // divisors(13) --> "13 is prime"
 
 // SOLUTION:
+
+function divisors(integer) {
+    let res = []
+    let a = integer - 1
+    while(a > 1){
+        if(integer % a === 0){
+            res = [a, ...res]
+        }
+        a--
+    }
+    return res.length? res: `${integer} is prime`
+
+}
