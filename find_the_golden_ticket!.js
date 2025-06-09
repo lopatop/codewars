@@ -14,3 +14,10 @@
 // finder([[false],[false],[false],[false],[false]]) // => "There is no golden ticket!"
 
 // SOLUTION:
+
+function finder(box) {
+    const flatBox = box.reduce((acc, el)=> acc.concat(el),[])
+    const index = flatBox.findIndex(el=> el)
+    return index !==-1? index: "There is no golden ticket!"
+
+}
