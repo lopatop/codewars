@@ -11,3 +11,16 @@
 
 
 // SOLUTION:
+
+function solve(arr) {
+    const newArr = []
+    let maxRight = 0
+    for(let i = arr.length - 1; i >=0; i--){
+        let el = arr[i]
+        if(el > maxRight){
+            newArr.unshift(el)
+            maxRight = el
+        }
+    }
+    return newArr
+}
