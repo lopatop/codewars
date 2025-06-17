@@ -16,3 +16,10 @@
 // Note that when an element inside arr2 is greater than the index of the last element of arr1 no element of arr1 should be added to the resulting array. If either arr1 or arr2 is empty, you should return an empty arr (empty list in python, empty vector in c++). Note for c++ use std::vector arr1, arr2.
 
 // SOLUTION:
+
+function findArray(arr1, arr2) {
+    if (!arr1.length || !arr2.length) return [];
+    return arr2
+        .filter(index => index < arr1.length)
+        .map(index => arr1[index]);
+}
