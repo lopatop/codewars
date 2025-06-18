@@ -27,3 +27,33 @@
 // alphabetWar("wwwwwwz");  //=> Left side wins!
 
 // SOLUTION:
+
+function alphabetWar(fight) {
+    let left = 0
+    let right = 0
+    fight = fight.split('')
+    for (let i = 0; i < fight.length; i++) {
+        const el = fight[i]
+        if (el === 'w') {
+            left += 4
+        } else if (el === 'p') {
+            left += 3
+        } else if (el === 'b') {
+            left += 2
+        } else if (el === 's') {
+            left += 1
+        } else if (el === 'm') {
+            right += 4
+        } else if (el === 'q') {
+            right += 3
+        } else if (el === 'd') {
+            right += 2
+        } else if (el === 'z') {
+            right += 1
+        } else el
+    }
+    if (left > right) return "Left side wins!"
+    if (left === right) return "Let's fight again!"
+    if (left < right) return "Right side wins!"
+
+}
