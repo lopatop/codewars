@@ -11,3 +11,14 @@
 // P.S. If n < 0, return false
 
 // SOLUTION:
+
+
+
+function checkVowel(string, position) {
+    if(position < 0 || string.length <= position) return false
+
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    return vowels.includes(string[position].toLowerCase());
+
+
+};
