@@ -10,3 +10,9 @@
 //
 
 // SOLUTION:
+
+function wordSearch(query, seq){
+    const arr = []
+    seq.forEach(el=> el.toLowerCase().includes(query.toLowerCase())? arr.push(el):el)
+    return arr.length == 0? ['Empty']: arr
+}
