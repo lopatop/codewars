@@ -13,3 +13,7 @@
 // If you need help, here is a resource ( in Ruby ).
 
 // SOLUTION:
+
+function one(arr, fun) {
+    return arr.filter(fun).length === 1;
+}
