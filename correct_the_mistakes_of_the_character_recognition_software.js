@@ -11,3 +11,21 @@
 // The test cases contain numbers only by mistake.
 
 //SOLUTION
+
+function correct(string){
+    const arrStr = string.split('')
+    let newStr = ''
+    for(let i = 0; i < arrStr.length; i++){
+        const el = arrStr[i]
+        if(el == 5 ){
+            newStr += 'S'
+        }else if(el === '0'){
+            newStr += 'O'
+        }else if (el == 1){
+            newStr += 'I'
+        }else {
+            newStr += el
+        }
+    }
+    return newStr.trim()
+}
