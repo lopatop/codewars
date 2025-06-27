@@ -5,3 +5,7 @@
 //     [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
 
 //SOLUTION
+
+function divisibleBy(numbers, divisor){
+    return numbers.filter(el=> el % divisor === 0)
+}
