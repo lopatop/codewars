@@ -12,3 +12,7 @@
 
 //SOLUTION
 
+function hello(name) {
+    const newName = name? name[0].toUpperCase()+name.slice(1).toLowerCase():'World'
+    return `Hello, ${newName}!`
+}
