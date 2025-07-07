@@ -7,3 +7,10 @@
 
 //SOLUTION
 
+function explode(s) {
+    let newStr  = ''
+    for(let i = 0; i < s.length; i++){
+        newStr +=s[i].repeat(+s[i])
+    }
+    return newStr
+}
