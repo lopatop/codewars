@@ -11,3 +11,4 @@
 
 //SOLUTION
 
+f=s=>s<{}
