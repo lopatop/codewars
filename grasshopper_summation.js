@@ -9,3 +9,12 @@
 
 //SOLUTION
 
+var summation = function (num) {
+    let count = 0
+    let i = 1
+    while(i <= num){
+        count += i
+        i++
+    }
+    return count
+}
