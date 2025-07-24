@@ -9,3 +9,21 @@
 // The index should be in the range [0..length-1]. If it is not, or if the list is empty, GetNth() should throw/raise an exception (ArgumentException in C#, InvalidArgumentException in PHP, Exception in Java).
 
 //SOLUTION
+
+function Node(data) {
+    this.data = data;
+    this.next = null;
+}
+
+function getNth(node, index) {
+    if(index < 0 ) throw new Error('Invalid index value should throw error.')
+    let current = node
+    let count = 0;
+
+    while (current) {
+        if (count === index) return current;
+        current = current.next;
+        count++;
+    }
+    throw new Error('Index out of bounds');
+}
