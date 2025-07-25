@@ -16,3 +16,20 @@
 
 //SOLUTION
 
+function encode(plaintext){
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let result = '';
+
+    for(let i = 0; i < plaintext.length; i++){
+        const char = plaintext[i]
+        const lowerChar = char.toLowerCase()
+        const index = alphabet.indexOf(lowerChar)
+
+        if(index !== -1){
+            result += index%2 === 0 ? '0': '1'
+        }else{
+            result += char
+        }
+    }
+    return result
+}
