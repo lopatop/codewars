@@ -11,3 +11,13 @@
 
 //SOLUTION
 
+function missingWord(nums, str) {
+    const trimStr = str.toLowerCase().replace(/\s/g, '')
+    const sortNums = [...nums].sort((a,b)=> a-b)
+
+    if (sortNums.some(index => index >= trimStr.length)) {
+        return "No mission today";
+    }
+
+    return `${trimStr[sortNums[0]]}${trimStr[sortNums[1]]}${trimStr[sortNums[2]]}`
+}
