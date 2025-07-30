@@ -12,3 +12,7 @@
 
 //SOLUTION
 
+function all( arr, fun ){
+
+    return arr.length === 0 ? true: arr.every(fun)
+}
