@@ -13,3 +13,19 @@
 // Note: this list only mentions the methods' names, not the order in which they should be called. For the order, refer to the first paragraph.
 
 // SOLUTION:
+
+var health = 100
+var position = 0
+var coins = 0
+
+function main () {
+    rollDice()
+    move()
+    combat()
+    getCoins()
+    buyHealth()
+    printStatus()
+
+
+
+}
