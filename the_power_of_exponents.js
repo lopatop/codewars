@@ -15,3 +15,21 @@
 // power(4, -2)  // 0.0625
 
 //SOLUTION
+
+function power(base, exponent){
+    let res = 1
+
+    if(exponent > 0){
+        while(exponent > 0){
+            res = res*base
+            exponent = exponent - 1
+        }
+        return res
+    }else {
+        while(exponent < 0){
+            res = res*base
+            exponent = exponent + 1
+        }
+        return  1/res
+    }
+}
