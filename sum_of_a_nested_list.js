@@ -5,3 +5,6 @@
 
 //SOLUTION
 
+const sumNested = arr => {
+    return arr.flat(Infinity).reduce((acc,el)=> acc+=el, 0)
+};
