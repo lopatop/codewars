@@ -6,3 +6,7 @@
 // "hello world" -> ["hello", "world"]
 
 //SOLUTION
+
+function splitSentence(s) {
+    return s.split(' ')
+}
