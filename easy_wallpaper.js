@@ -28,3 +28,14 @@
 // For other languages it is not preloaded and you can instead copy the above list if you desire.
 
 //SOLUTION
+
+function wallpaper(l, w, h) {
+
+    const numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve","thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+    if(l==0 || w ==0 || h==0) return numbers[0]
+    const rollS = 5.2
+    const roomS = h*(w+l)*2
+    const rools = roomS/rollS*1.15
+
+    return numbers[Math.ceil(rools)]
+}
