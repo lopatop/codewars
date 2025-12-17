@@ -6,3 +6,5 @@
 // a == !a
 
 //SOLUTION
+
+const a = []
