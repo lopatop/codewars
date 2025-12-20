@@ -7,3 +7,7 @@
 // Assume the angles formed by AB and BC are right angles.
 
 //SOLUTION
+
+function polygonArea(A, B, C, D) {
+    return A * B + (C - A) * D;
+}
