@@ -41,4 +41,22 @@
 //     "No more bottles of beer on the wall, no more bottles of beer.",
 //     "Go to the store and buy some more, 99 bottles of beer on the wall." ]
 
-//SOLUTION 
+//SOLUTION
+
+var sing = function () {
+    const res = [];
+
+    for (let i = 99; i > 0; i--) {
+        const bottle = i === 1 ? 'bottle' : 'bottles';
+        const nextBottle = i - 1 === 1 ? 'bottle' : 'bottles';
+        const nextCount = i - 1 === 0 ? 'no more' : i - 1;
+
+        res.push(`${i} ${bottle} of beer on the wall, ${i} ${bottle} of beer.`);
+        res.push(`Take one down and pass it around, ${nextCount} ${nextBottle} of beer on the wall.`);
+    }
+
+    res.push(`No more bottles of beer on the wall, no more bottles of beer.`);
+    res.push(`Go to the store and buy some more, 99 bottles of beer on the wall.`);
+
+    return res;
+};
