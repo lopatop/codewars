@@ -10,3 +10,15 @@
 
 //SOLUTION
 
+function countPositivesSumNegatives(input) {
+    if (input == null || !input.length) return []
+    let positivesCount = 0
+    let negativesSum = 0
+    for(let i = 0; i<input.length; i++){
+        input[i]>0? positivesCount+=1:negativesSum+=input[i]
+    }
+
+    return [positivesCount,negativesSum]
+
+
+}
