@@ -13,3 +13,7 @@
 // Note: Zero should be left as it is.
 
 //SOLUTION
+
+function noBoringZeros(n) {
+    return Number(String(n).replace(/0+$/, ''))
+}
