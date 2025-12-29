@@ -8,3 +8,13 @@
 
 //SOLUTION
 
+function powersOfTwo(n){
+    const res = []
+    let count = 0
+
+    while (count != n+1){
+        res.push(2**count)
+        count+=1
+    }
+    return res
+}
