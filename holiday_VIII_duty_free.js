@@ -10,3 +10,7 @@
 //     All inputs will be integers. Please return an integer. Round down.\
 
 //SOLUTION
+
+function dutyFree(normPrice, discount, hol){
+    return Math.floor(hol/(normPrice*discount*0.01))
+}
