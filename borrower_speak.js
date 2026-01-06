@@ -9,3 +9,8 @@
 
 //SOLUTION
 
+function borrow(s) {
+    return s
+        .toLowerCase()
+        .replace(/[!?;:,. ]/g, '');
+}
