@@ -11,3 +11,6 @@
 
 //SOLUTION
 
+function isDivisible(n, ...args){
+    return args.every(el=>n%el == 0)
+}
