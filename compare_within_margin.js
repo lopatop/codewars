@@ -28,3 +28,8 @@
 // This is because the distance between a and b is greater than 0, and a is less than b.
 
 //SOLUTION
+
+function closeCompare(a, b, margin = 0){
+    if (Math.abs(a - b) <= margin) return 0
+    return a < b ? -1 : 1
+}
