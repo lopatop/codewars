@@ -16,3 +16,18 @@
 // "bull color pig Patrick" --> "Patrick bull color pig"
 
 //SOLUTION
+
+function reOrdering(text) {
+    const arrText = text.split(' ');
+
+    const index = arrText.findIndex(
+        word => word[0] === word[0].toUpperCase()
+    );
+
+    if (index <= 0) return text;
+    const arrWord = arrText[index]
+    arrText.splice(index,1)
+    arrText.unshift(arrWord)
+
+    return arrText.join(' ');
+}
