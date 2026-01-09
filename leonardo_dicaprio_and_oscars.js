@@ -11,3 +11,6 @@
 
 //SOLUTION
 
+function unusualFive() {
+    return '     '.length;
+}
