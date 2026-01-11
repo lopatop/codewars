@@ -8,4 +8,4 @@
 
 //SOLUTION
 
-
+x=a=>~~a
