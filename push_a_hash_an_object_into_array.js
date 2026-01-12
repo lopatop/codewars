@@ -3,3 +3,4 @@
 
 //SOLUTION
 
+items = [{a: "b", c: "d"}]
