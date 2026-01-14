@@ -13,3 +13,14 @@
 // #  9+3 = 12  -->  2
 
 //SOLUTION
+
+function incrementer(nums) {
+    let res = []
+    for(let i = 0; i < nums.length; i++){
+        const sum = nums[i]+i+1
+        const stringRes = String(sum)
+        res.push(stringRes.length>1?+stringRes[stringRes.length-1]:+stringRes)
+
+    }
+    return res
+}
