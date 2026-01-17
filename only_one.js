@@ -8,3 +8,14 @@
 //     [False, False, False, False]	False
 
 //SOLUTION
+
+function onlyOne(...arg) {
+    let count = 0
+    if(arg.length === 0) return false
+    for(let i = 0; i < arg.length; i++){
+        if(arg[i] == true){
+            count++
+        }
+    }
+    return count == 1? true : false
+}
