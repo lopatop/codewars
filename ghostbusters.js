@@ -13,3 +13,13 @@
 //     "You just wanted my autograph didn't you?"
 
 //SOLUTION
+
+
+function ghostBusters(building) {
+    if(building.includes(' ') == false) return "You just wanted my autograph didn't you?"
+    let res = ''
+    for(let i = 0; i < building.length; i++){
+        building[i] == ' '? null : res+=building[i]
+    }
+    return res
+}
