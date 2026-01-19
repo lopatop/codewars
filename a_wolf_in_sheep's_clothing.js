@@ -17,3 +17,11 @@
 // Output: "Pls go away and stop eating my sheep"
 
 //SOLUTION
+
+function warnTheSheep(queue) {
+    let queueReverse = queue.reverse()
+    if(queueReverse[0] == 'wolf') return "Pls go away and stop eating my sheep"
+    const index = queueReverse.indexOf('wolf')
+    return `Oi! Sheep number ${index}! You are about to be eaten by a wolf!`
+
+}
