@@ -13,3 +13,20 @@
 // "paper",        "paper"     --> "Draw!"
 
 //SOLUTION
+
+const rps = (p1, p2) => {
+    const inf = {
+        r: 'rock',
+        s: 'scissors',
+        p: 'paper'
+    }
+    if(p1 == p2) return "Draw!"
+    if (p1 == inf.r && p2 == inf.s ) return "Player 1 won!"
+    if (p1 == inf.s && p2 == inf.p ) return "Player 1 won!"
+    if (p1 == inf.p && p2 == inf.r ) return "Player 1 won!"
+
+    return "Player 2 won!"
+
+
+
+};
