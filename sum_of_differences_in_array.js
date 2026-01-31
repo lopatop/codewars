@@ -11,3 +11,8 @@
 
 //SOLUTION
 
+function sumOfDifferences(arr) {
+    return arr
+        .sort((a, b) => b - a)
+        .reduce((acc, el, i, a) => acc + (i < a.length - 1 ? el - a[i + 1] : 0), 0);
+}
