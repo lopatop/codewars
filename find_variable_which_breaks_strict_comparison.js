@@ -7,3 +7,6 @@
 
 //SOLUTION
 
+function findStrangeValue() {
+    return NaN
+}
