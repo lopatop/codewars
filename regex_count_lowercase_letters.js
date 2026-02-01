@@ -15,3 +15,11 @@
 //"abcdefghijklmnopqrstuvwxyz" ===> 26
 
 //SOLUTION
+
+function lowercaseCount(str){
+    let res = 0
+    for(let i = 0; i<str.length; i++){
+        (str[i] === str[i].toUpperCase())? null :res+=1
+    }
+    return res
+}
