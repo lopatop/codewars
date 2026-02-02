@@ -9,3 +9,11 @@
 
 //SOLUTION
 
+function stringClean(s) {
+    let res = '';
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] >= '0' && s[i] <= '9') continue;
+        res += s[i];
+    }
+    return res;
+}
