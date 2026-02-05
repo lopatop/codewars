@@ -4,3 +4,7 @@
 //     Use conditionals to return the proper message:
 
 //SOLUTION
+
+function greet (name, owner) {
+    return name === owner? 'Hello boss': 'Hello guest'
+}
