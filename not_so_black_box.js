@@ -4,3 +4,6 @@
 // You may need to think laterally!
 
 //SOLUTION
+
+console.log(String(blackBox))
+JSopenSesame()
