@@ -9,3 +9,20 @@
 //     [33, 231, 454, 11, 9, 99, 57]  => 104874 = 231 * 454
 
 //SOLUTION
+
+function maxProduct(a) {
+    let max1 = null
+    let max2 = null
+
+    for(let num of a){
+        if(num>max1){
+            max2 = max1
+            max1 = num
+        }else if( num > max2){
+            max2 = num
+        }
+    }
+
+
+    return max1*max2
+}
