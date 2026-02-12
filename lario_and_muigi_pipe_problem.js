@@ -13,3 +13,16 @@
 // Input:  1,3,5,6,7,8 Output: 1,2,3,4,5,6,7,8
 
 //SOLUTION
+
+function pipeFix(numbers){
+    const res = []
+    let count = numbers[0]
+    const lastEll = numbers[numbers.length -1]
+    while(count <= lastEll){
+        res.push(count)
+        count = count +1
+
+
+    }
+    return res
+}
