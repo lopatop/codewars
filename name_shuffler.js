@@ -6,3 +6,9 @@
 // "john McClane" --> "McClane john"
 
 //SOLUTION
+
+function nameShuffler(str){
+    const arr = str.split(' ')
+    const arrReverse = [arr[1], arr[0]]
+    return arrReverse.join(' ')
+}
