@@ -14,3 +14,7 @@
 //
 
 //SOLUTION
+
+function sumSquares(array) {
+    return array.reduce((acc, ell)=> acc + ell**2, 0)
+}
