@@ -9,3 +9,13 @@
 
 //SOLUTION
 
+function numberToPower(number, power){
+    if(power == 0) return 1
+    let count = 1
+    let res = number
+    while(power > count){
+        res = res*number
+        count+=1
+    }
+    return res
+}
