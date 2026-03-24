@@ -17,3 +17,18 @@
 
 
 //SOLUTION
+
+function sumFactorial(arr){
+    let res = 0
+
+    for(let i = 0; i < arr.length; i++){
+        let num = arr[i]
+        let factorial = 1
+        while(num > 1){
+            factorial = factorial*num
+            num--
+        }
+        res += factorial
+    }
+    return res
+}
