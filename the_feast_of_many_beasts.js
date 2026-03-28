@@ -8,3 +8,8 @@
 //SOLUTION
 
 
+function feast(beast, dish) {
+    let beastLast = beast.length-1
+    let dishLast = dish.length-1
+    return (beast[0] == dish[0] && beast[beastLast] == dish[dishLast])
+}
