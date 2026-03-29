@@ -21,3 +21,11 @@
 // The two strings will be the same length.
 
 //SOLUTION
+
+function neutralise(s1, s2) {
+    let res = ''
+    for(let i = 0; i < s1.length; i++){
+        s1[i] === s2[i]? res+=s1[i] : res+='0'
+    }
+    return res;
+}
