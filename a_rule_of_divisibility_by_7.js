@@ -26,3 +26,16 @@
 // seven(477557101) should return [28, 7]
 
 //SOLUTION
+
+function seven(m) {
+
+    let res = m
+    let count = 0
+
+    while(res > 99){
+        res = (res/10 | 0) - (2* (res%10))
+        count++
+    }
+
+    return [res,count]
+}
