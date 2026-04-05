@@ -11,3 +11,10 @@
 
 //SOLUTION
 
+function getMissingElement(superImportantArray){
+    const arrSorted = [...superImportantArray].sort((a,b)=> a-b)
+    for(let i = 0; i < arrSorted.length; i++){
+        if(arrSorted[i] !== i) return i
+    }
+    return arrSorted.length
+}
