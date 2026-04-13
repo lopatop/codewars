@@ -17,3 +17,9 @@
 // Note: The numbers will always be 0 or positive integers!
 
 //SOLUTION
+
+function isVeryEvenNumber(n) {
+    if(n === 0) return true
+    const digitalRoot = (n % 9 === 0) ? 9 : n % 9
+    return digitalRoot % 2 === 0
+}
