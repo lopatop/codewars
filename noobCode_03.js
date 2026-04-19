@@ -9,3 +9,8 @@
 
 //SOLUTION
 
+function letterCheck(arr) {
+    const target = arr[0].toLowerCase()
+    const search = arr[1].toLowerCase().split('')
+    return search.every(el=>target.includes(el))
+}
