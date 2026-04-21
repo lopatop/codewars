@@ -46,3 +46,21 @@
 // getRequired([7, 2], [6, 8]) // returns "Pray for a tie!"
 
 //SOLUTION
+
+function getRequired(player, enemy) {
+    const sumPlayer = player[0] + player[1]
+    const sumEnemy = enemy[0] + enemy[1]
+    const diff = sumPlayer - sumEnemy
+    if(diff === 0) return "Random"
+    if(diff >= 6) return "Auto-win"
+    if(diff <= -6) return "Auto-lose"
+    if (diff === -5) return "Pray for a tie!"
+    if (diff > 0) {
+        const x = 6 - diff + 1;
+        return `(${x}..6)`;
+    }
+    if (diff < 0) {
+        const x = 6 + diff - 1;
+        return `(1..${x})`;
+    }
+}
