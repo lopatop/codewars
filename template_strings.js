@@ -9,3 +9,7 @@
 // You must output a string containing the two strings with the word ```' are '```
 
 //SOLUTION
+
+var templateStrings = function(noun, adjective) {
+    return `${noun} are ${adjective}`
+}
