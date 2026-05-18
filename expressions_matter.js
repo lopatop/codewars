@@ -21,3 +21,15 @@
 // expressionsMatter(9, 1, 1) ==> 18, because 9 * (1 + 1) = 18.
 
 //SOLUTION
+
+    function expressionMatter(a, b, c) {
+        const sum = a + b + c
+        const firstSum = (a + b) * c
+        const lastSum = a * (b + c)
+        const secontSum = a + b * c
+        const multiply = a * b * c
+        const res = [sum,firstSum,lastSum,secontSum,multiply ].sort((a,b)=>b-a)
+        return res[0]
+
+
+    }
