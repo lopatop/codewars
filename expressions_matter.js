@@ -28,7 +28,7 @@
         const lastSum = a * (b + c)
         const secondSum = a + b * c
         const multiply = a * b * c
-        const res = [sum,firstSum,lastSum,secontSum,multiply ].sort((a,b)=>b-a)
+        const res = [sum,firstSum,lastSum,secondSum,multiply ].sort((a,b)=>b-a)
         return res[0]
 
 
