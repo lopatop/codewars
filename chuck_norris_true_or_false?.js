@@ -12,3 +12,6 @@
 //SOLUTION
 
 
+function ifChuckSaysSo(){
+    return !true
+}
