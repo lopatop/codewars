@@ -8,3 +8,6 @@
 
 //SOLUTION
 
+function ensureQuestion(s) {
+    return s.indexOf("?") === -1? s+"?" : s
+}
