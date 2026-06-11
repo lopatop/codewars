@@ -25,3 +25,16 @@
 
 //SOLUTION
 
+function isKiss( words ){
+    const wordsArr = words.split(' ')
+    const countWordsLength = wordsArr.length
+    let isResult = true
+    for(let i = 0; i < wordsArr.length; i++){
+        if(wordsArr[i].length > countWordsLength){
+            isResult = false
+            break
+        }
+    }
+
+    return isResult ? "Good work Joe!" : "Keep It Simple Stupid"
+}
