@@ -38,3 +38,8 @@
 //     In the end, click "Submit" to submit your code pass this kata.
 
 //SOLUTION
+
+function helloWorld(){
+    const str = "Hello World!"
+    return console.log(str)
+}
