@@ -18,3 +18,8 @@
 // unique(arr); // should return [1,2,3]
 
 //SOLUTION
+
+function unique(arr) {
+    return arr.filter((el,index) => arr.indexOf(el) === index)
+
+}
